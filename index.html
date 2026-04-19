@@ -5,24 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resume</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 
 body {
     margin: 0;
-    overflow-x:hidden;
     background: #f2eee9;
-    font-family:'Times New Roman', Times,serif;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
 
 /* MAIN CONTAINER */
 .container {
     display: flex;
     max-width: 1100px;
-    gap:20px;
-    width:100%;
+    width: 100%;
     margin: 20px auto;
     background: white;
 }
@@ -35,10 +33,6 @@ body {
 }
 
 /* CONTACT */
-.contact p {
-    font-size: 14px;
-    margin: 12px 0;
-}
 .contact-box {
     background: #b3a79d;
     padding: 20px;
@@ -51,6 +45,7 @@ body {
     font-size: 14px;
     font-weight: 500;
 }
+
 /* HEADINGS */
 .left h3 {
     letter-spacing: 3px;
@@ -58,15 +53,9 @@ body {
     margin-top: 30px;
 }
 
-/* SKILL BARS */
+/* SKILLS */
 .skill {
     margin: 24px 0;
-}
-
-.skill span {
-    font-size: 16px;
-    
-
 }
 
 .bar {
@@ -86,15 +75,14 @@ body {
 .edu {
     margin-top: 15px;
     font-size: 16px;
-    
 }
 
 .year {
     font-weight: bold;
-    color: #170e0c;
 }
-.degree{
-    font-weight:bold;
+
+.degree {
+    font-weight: bold;
     color: #503e39;
 }
 
@@ -106,23 +94,14 @@ body {
 
 /* NAME */
 .name {
-    font-family: 'Playfair Display',serif;
+    font-family: 'Playfair Display', serif;
     font-size: 55px;
-    color:#2d1d18;
     margin: 0;
 }
 
-
 .role {
-    letter-spacing: 3px;
     font-size: 14px;
-    margin-top: 20px;
-}
-
-.role {
-    letter-spacing: 1px;
-    font-size: 14px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 /* SECTION */
@@ -136,7 +115,8 @@ body {
     font-size: 20px;
 }
 
-.section p {
+.section p,
+.job ul {
     font-size: 16px;
     line-height: 1.6;
 }
@@ -149,46 +129,19 @@ body {
 .job h4 {
     margin: 0;
     font-size: 16px;
-    letter-spacing: 1px;
 }
 
-.job span {
-    font-size: 14px;
-    color: gray;
-}
+/* MOBILE FIX → KEEP SAME LAYOUT + SCROLL */
+@media (max-width: 768px) {
 
-.job ul {
-    font-size: 16px;
-    
-}
-.section.activities{
-    margin-left:20px;
-}
-.activities h2{
-    margin-left:-20px;
-}
-.activities ul{
-    margin-left:25px;
+    body {
+        overflow-x: auto;
+    }
 
+    .container {
+        min-width: 1100px; /* keeps desktop layout */
+    }
 }
-    @media(max-width:768px){
-    .container{
-        display:flex;
-        flex-direction:column;
-        margin:10px;
-    }
-    .left{
-        width:40%;
-        padding:15%;
-    }
-    .right{
-        width:60%;
-        padding:15px;
-    }
-    }
-.left,.right{
-    width:100%;
-padding:20px;}
 
 </style>
 </head>
@@ -197,15 +150,14 @@ padding:20px;}
 
 <div class="container">
 
-    <!-- LEFT SIDE -->
+    <!-- LEFT -->
     <div class="left">
 
         <div class="contact-box">
             <p>📞 7598469873</p>
-            <p>✉   jotsna1106@gmail.com</p>
+            <p>✉ jotsna1106@gmail.com</p>
             <p>📍 Ettamadai</p>
             <p>🌐 linkedin.com/in/jotsna-g</p>
- 
         </div>
 
         <h3>SKILLS</h3>
@@ -241,7 +193,7 @@ padding:20px;}
         </div>
 
         <div class="skill">
-            <span>Leadership & Communication </span>
+            <span>Leadership & Communication</span>
             <div class="bar"><div class="fill" style="width:85%"></div></div>
         </div>
 
@@ -255,10 +207,11 @@ padding:20px;}
 
         <div class="edu">
             <div class="year">2023 - 2024</div>
-           <div class="degree">Higher Secondary Education</div>
+            <div class="degree">Higher Secondary Education</div>
             Ponjesly Public Matriculation Higher Secondary School
         </div>
-         <div class="edu">
+
+        <div class="edu">
             <div class="year">2010 - 2022</div>
             <div class="degree">Secondary Education</div>
             St. Francis Assisi Matriculation Higher Secondary School
@@ -266,75 +219,57 @@ padding:20px;}
 
     </div>
 
-    <!-- RIGHT SIDE -->
-  <div class="container">
-       <div class="header">
-    
+    <!-- RIGHT -->
+    <div class="right">
+
         <h1 class="name">Jotsna G</h1>
         <div class="role">ASPIRING UI/UX DESIGNER & FRONTEND DEVELOPER</div>
-    
+
         <div class="section">
-            <div class="right">
             <h2>PROFILE</h2>
             <p>
-                Aspiring UI/UX Designer and Frontend Developer passionate about Creating clean , responsive and user-friendly interfaces.
+                Aspiring UI/UX Designer and Frontend Developer passionate about creating clean, responsive and user-friendly interfaces.
             </p>
         </div>
 
         <div class="section">
             <h2>PROJECTS</h2>
 
-        
-
-            
             <div class="job">
                 <h4>STUDENT TASK MANAGEMENT APP</h4>
-            
                 <ul>
-                    <li>Designed a task management interface for organizing tasks and deadlines</li>
-                    <li>Created wireframes and UI screens using Figma, including dashboard, tasklist and add-task pages</li>
-                
+                    <li>Designed task management interface</li>
+                    <li>Created wireframes using Figma</li>
                 </ul>
             </div>
 
-             <div class="job">
+            <div class="job">
                 <h4>PERSONAL PORTFOLIO WEBSITE</h4>
-                
                 <ul>
-                    <li>Designed and developed a personal portfolio website using HTML & CSS</li>
-                    
+                    <li>Developed using HTML & CSS</li>
                 </ul>
             </div>
 
             <div class="job">
                 <h4>QUIZ MANAGEMENT SYSTEM</h4>
-                
                 <ul>
-                    <li>JavaFX-based academic project</li>
-                    <li>Developed a JavaFX based application where users log in, answer multiple choice questions, view their results after completion</li>
+                    <li>JavaFX-based project</li>
+                    <li>MCQ system with results</li>
                 </ul>
             </div>
-        </div>
 
         </div>
-        <div class="section activities">
-           
+
+        <div class="section">
             <h2>ACTIVITIES / ACHIEVEMENTS</h2>
-         
+            <ul>
+                <li>IET Student Member</li>
+                <li>Presented paper on AI</li>
+                <li>Participated in hackathons</li>
+            </ul>
+        </div>
 
-            </div class="job">
-                <ul>
-                    <li>IET Student Member</li>
-                    <li>Presented a paper on "AI in Daily Life"</li>
-                    <li>Participated in technical hackathons </li>
-                    <li>Designed creative posters and presentations using Canva</li>
-                    <li>Created UI designs using Figma and explored UX principles</li>
-                </ul>
-            </div>
-
-        
     </div>
-
 
 </div>
 
