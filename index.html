@@ -21,6 +21,7 @@ body {
 .container {
     display: flex;
     max-width: 1100px;
+    gap:20px;
     width:100%;
     margin: 20px auto;
     background: white;
@@ -173,7 +174,7 @@ body {
     @media(max-width:768px){
     .container{
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
         margin:10px;
     }
     .left{
@@ -185,7 +186,9 @@ body {
         padding:15px;
     }
     }
-
+.left,.right{
+    width:100%;
+padding:20px;}
 
 </style>
 </head>
@@ -264,13 +267,14 @@ body {
     </div>
 
     <!-- RIGHT SIDE -->
-  
-       <div class="right">
+  <div class="container">
+       <div class="header">
     
         <h1 class="name">Jotsna G</h1>
         <div class="role">ASPIRING UI/UX DESIGNER & FRONTEND DEVELOPER</div>
-
+    
         <div class="section">
+            <div class="right">
             <h2>PROFILE</h2>
             <p>
                 Aspiring UI/UX Designer and Frontend Developer passionate about Creating clean , responsive and user-friendly interfaces.
@@ -310,6 +314,7 @@ body {
                     <li>Developed a JavaFX based application where users log in, answer multiple choice questions, view their results after completion</li>
                 </ul>
             </div>
+        </div>
 
         </div>
         <div class="section activities">
@@ -327,7 +332,7 @@ body {
                 </ul>
             </div>
 
-        </div>
+        
     </div>
 
 
